@@ -1,0 +1,94 @@
+
+.CLubs-main-conatiner{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.CLubs-con-pub{
+  width: 49vw;
+}
+
+.CLubs-con{
+  width: 49vw;
+  background-color: transparent;
+}
+
+.club-title {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: yellow;
+    height: 50px;
+    border: 2px solid #111827;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* border-top: 2px solid #111827 ; */
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1F2937;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  padding-top: 10px;
+  background-color: #111827;
+}
+
+.card img {
+  width: 50% !important;
+  height: 50% !important;
+  border-radius: 50% !important;
+  border-bottom: 2px solid #ddd;
+}
+
+.card h2 {
+  padding: 10px;
+  font-size: 15px ;
+  cursor: pointer;
+  color:  #87ceeb;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: yellow;
+  box-shadow: 0 0 20px yellow;
+}
+
+
+@media (max-width:555px) {
+.club-title {
+  font-size: 18px;
+  height: 30px;
+}
+.card h2 {
+  font-size: 8px;
+}
+.CLubs-con{
+  width: 100vw;
+}
+.CLubs-main-conatiner{
+  flex-direction: column;
+}
+.CLubs-con-pub{
+  width: 100vw;
+}
+
+}

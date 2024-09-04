@@ -1,0 +1,96 @@
+
+.about-college {
+  width: 100%;
+  height: 70vh;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #1F2937;
+  color: #fafafa;
+ cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  column-gap: 40px;
+  font-size: 1rem;
+  columns: 3;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-color: #111827;
+  padding: 40px;
+  overflow: auto;
+  border-radius: 10px;
+  border: 2px solid yellow;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.about-college h1 {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  background-color: yellow;
+  color: black;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 5px;
+  box-shadow: 0 0 20px yellow;
+}
+
+
+
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Decrease the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000; /* Black color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4; /* Light gray background for the scrollbar track */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Decrease the width of the scrollbar */
+  scrollbar-color: #000000 #f4f4f4; /* Black thumb, light gray track */
+}
+
+
+.about-college:hover .container{
+  transition: all 0.2s ease-in-out;
+}
+
+
+@media (max-width:555px) {
+  .about-college{
+    padding: 10px;
+    padding-left: 40px;
+    padding-top: 40px;
+    height: 55vh;
+  }
+  .container{
+    width: 80vw !important;
+    height: 40vh;
+    overflow: auto !important;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-college h1{
+    width: 165px;
+    height: 20px;
+    font-size: 15px
+  }
+}

@@ -1,0 +1,115 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.Shadow-div{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+}
+
+
+.maintext{
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  top: 250px;  
+  z-index: 999;
+}
+.maintext :nth-child(1){
+  font-size: 25px;
+}
+.maintext :nth-child(2){
+  font-size: 50px;
+  font-weight: 700;
+}
+.maintext :nth-child(3){
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.logo1{
+  background-image: url("logo1.png");
+  height: 100px;
+  width: 120px;
+  position: absolute;
+  z-index: 999;
+  left: 455px;
+  top: 180px;
+  background-size: cover;
+
+}
+.logo2{
+  background-image: url("logo2.jpeg");
+  height: 95px;
+  width: 110px;
+  position: absolute;
+  z-index: 999;
+  right: 455px;
+  top: 185px;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+@media (max-width:555px) {
+  .hero-section{
+    height: 40vh;
+    width: 100%;
+  }
+  .Shadow-div{
+    height: 40vh !important;
+  }
+  .maintext{
+    top: 160px;
+   font-size: 7px;
+  }
+  .maintext :nth-child(1){
+    font-size: 15px;
+  }
+  .maintext :nth-child(2){
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .maintext :nth-child(3){
+    font-size: 5px;
+    margin-bottom: 2px;
+  }
+  .logo1{
+    height: 35px;
+    width: 35px;
+    top: 140px;
+    left: 100px;
+  }
+  .logo2{
+    height: 35px;
+    width: 35px;
+    top: 140px;
+    right: 100px;
+  }
+}
