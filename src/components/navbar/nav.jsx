@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './nav.css'
 import { IoMdArrowDropdown } from "react-icons/io";
 import { VscThreeBars } from "react-icons/vsc";
@@ -11,9 +11,31 @@ const NavBar = ()=>{
     setbar(!bar);
   }
 
+
+  const [navBackground, setNavBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // You can change this value based on when you want the background to change
+      const sectionOffset = window.innerHeight / 1; // halfway through the viewport
+
+      if (window.scrollY > sectionOffset) {
+        setNavBackground(true);
+      } else {
+        setNavBackground(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <>
-    <div className={`nav ${bar?'show':'hide'}`} >
+    <div className={`nav ${bar?'show':'hide'} ${navBackground ? 'navbar-colored' : 'navbar-transparent'} `} >
 <div className="nav-items">Home</div>
 <ul className="nav-list">
         <li className="nav-item dropdown">

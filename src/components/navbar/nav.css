@@ -10,6 +10,18 @@
   flex-wrap: nowrap;
   color: white;
   font-size: 18px;
+ transition: all 0.2s ease-in-out;
+
+}
+
+.navbar-transparent{
+  background-color: transparent;
+}
+
+.navbar-colored{
+background-color: #1F2937;
+transition: all 0.1s ease-in-out;
+height: 10vh;
 }
 
 .nav-items{
