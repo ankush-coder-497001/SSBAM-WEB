@@ -134,9 +134,9 @@ transition: all 0.2s ease-out;
 
 @media (max-width:555px) {
   .nav{
-    height: 50vh !important;
+    height: 85vh !important;
     font-size:8px !important;
-    width: 40vw !important;
+    width: 55vw !important;
     flex-direction: column !important;
     right: 10px !important;
     top: 40px !important;
@@ -145,13 +145,20 @@ transition: all 0.2s ease-out;
   }
 .nav-items{
   background-color: #000000;
-  width: 100px;
+  width: 140px;
   border-radius: 5px;
+  height: 53px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   .dropdown-menu{
-    font-size: 7px !important;
-    width: 100px !important;
-    left: -60px !important;
+    font-size: 15px !important;
+    width: 175px !important;
+    left: -129px !important;
 
   }
 

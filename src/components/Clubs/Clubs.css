@@ -11,12 +11,11 @@
 }
 
 .CLubs-con{
-  width: 49vw;
   background-color: transparent;
 }
 
 .club-title {
-    color: #333;
+    color: #333 !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,11 +35,8 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #1F2937;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 20px;
+  background-color: #1F2937 ;
+
 
 }
 
@@ -64,9 +60,9 @@
 
 .card h2 {
   padding: 10px;
-  font-size: 15px ;
+  font-size: 15px !important ;
   cursor: pointer;
-  color:  #87ceeb;
+  color:  #87ceeb !important;
 }
 
 .card:hover {
@@ -85,13 +81,17 @@
   font-size: 8px;
 }
 .CLubs-con{
-  width: 100vw;
+  width: 40vw;
+  height: 56vh;
+  overflow-y: auto;
 }
 .CLubs-main-conatiner{
   flex-direction: column;
 }
 .CLubs-con-pub{
-  width: 100vw;
+  width: 40vw;
+  height: 56vh;
+  overflow-y: auto;
 }
 
 }
